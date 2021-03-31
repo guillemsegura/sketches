@@ -1,11 +1,8 @@
-// Import the library
 const canvasSketch = require("canvas-sketch");
 
 const seed = Math.random();
 
-// Specify some output parameters
 const settings = {
-  // The [ width, height ] of the artwork in pixels
   dimensions: [1000, 1000],
   suffix: seed,
 };
@@ -48,7 +45,6 @@ const sketch = () => {
   });
 
   return (props) => {
-    // Destructure what we need from props
     const { context, width, height } = props;
 
     context.fillStyle = "white";
@@ -57,7 +53,6 @@ const sketch = () => {
     rects.forEach((rect) => {
       context.beginPath();
       context.fillStyle = rect.fill;
-      // context.lineWidth = 2;
       context.moveTo(rect.x, rect.y);
       context.lineTo(rect.x + rect.angle, rect.y + rect.width);
       context.lineTo(rect.x + rect.height + rect.angle, rect.y + rect.width);
@@ -65,29 +60,6 @@ const sketch = () => {
       context.lineTo(rect.x, rect.y);
       context.fill();
     });
-
-    // frontrects.forEach((rect) => {
-    //   context.beginPath();
-    //   context.fillStyle = rect.fill;
-    //   // context.lineWidth = 2;
-    //   context.moveTo(rect.x, rect.y);
-    //   context.lineTo(rect.x + rect.angle, rect.y + rect.width);
-    //   context.lineTo(rect.x + rect.height + rect.angle, rect.y + rect.width);
-    //   context.lineTo(rect.x + rect.height, rect.y);
-    //   context.lineTo(rect.x, rect.y);
-    //   context.fill();
-    // });
-
-    // Fill the canvas with pink
-    // context.fillStyle = "pink";
-    // context.fillRect(0, 0, 5, height);
-
-    // Now draw a white rectangle in the center
-    // for (let i = 0; i < 500; i += 30) {
-    //   context.strokeStyle = "white";
-    //   context.lineWidth = 5;
-    //   context.strokeRect(width / 2 - i / 2, height / 2 - i / 2, i, i);
-    // }
   };
 };
 
