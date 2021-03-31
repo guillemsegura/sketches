@@ -6,7 +6,7 @@ const seed = Math.random();
 // Specify some output parameters
 const settings = {
   // The [ width, height ] of the artwork in pixels
-  dimensions: [500, 500],
+  dimensions: [1000, 1000],
   suffix: seed,
 };
 
@@ -17,16 +17,16 @@ const sketch = () => {
   const count = 100000;
   const size = 50;
   const rects = Array.from(new Array(count)).map(() => {
-    const y = random(-100, 500);
+    const y = random(0, 1000);
     return {
-      x: random(-100, 500),
+      x: random(-100, 1000),
       y: y,
       width: random(0, size),
       height: random(0, size),
-      fill: `rgba(${random(y % 500, 255)},${random(200, 255)},${random(
-        150,
+      fill: `rgba(${random(-200 + (y % 1000), 255)},${random(
+        200,
         255
-      )},${random(0, 0.7)})`,
+      )},${random(150, 255)},${random(0, 0.7)})`,
       angle: size * 2.5,
     };
   });
