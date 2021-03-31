@@ -1,0 +1,23 @@
+{
+  "name": "sketches",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guillemsegura/sketches.git"
+  },
+  "author": "@guillemsegura",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guillemsegura/sketches/issues"
+  },
+  "homepage": "https://github.com/guillemsegura/sketches#readme",
+  "dependencies": {
+    "canvas-sketch": "^0.7.4",
+    "p5": "^1.3.1"
+  }
+}
