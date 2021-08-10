@@ -1,5 +1,12 @@
 # Sketches
 
+<table>
+    <tr valign="top">
+        <td width="33%"><br><a href="sketches/beach-rectangles.js" title="Beach Rectangles"><img width="290" src="./screenshots/beach-rectangles.png"></a></td>
+        <td width="33%"><br><a href="sketches/circles.js" title="Circles"><img width="290" src="./screenshots/circles.png"></a></td>
+    </tr>
+</table>
+
 Using @mattdesl `canvas-sketch` framework: https://github.com/mattdesl/canvas-sketch
 
 ## Getting started
