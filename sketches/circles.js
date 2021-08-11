@@ -13,6 +13,20 @@ const settings = {
 const sketch = () => {
   // const random = (min, max) => Math.random() * (max - min) + min;
 
+  // const count = 1000;
+  // const size = 100;
+  // let data = Array.from(new Array(count)).map((_, i) => {
+  //   const index = size + i; // (settings.dimensions[1] - size * 2);
+  //   const x = Math.sin(index * 0.04) * 300 + settings.dimensions[0] / 2;
+  //   const y = Math.cos(index * 0.1) * 140 + settings.dimensions[1] / 2;
+  //   return {
+  //     x: x, // + i / 10,
+  //     y: y, // + 200,
+  //     fill: `rgba(0, 0, 0, 0.1)`,
+  //     size: y * 0.2,
+  //   };
+  // });
+
   const count = 1000;
   const size = 100;
   let data = Array.from(new Array(count)).map((_, i) => {
